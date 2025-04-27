@@ -62,7 +62,7 @@ func (u *moistureUseCase) MonitorMoistureUseCase(presentMoistureLevel uint32) {
 	}
 
 	if presentMoistureLevel <= settings.Min {
-		url := fmt.Sprintf("%s?level=%s", u.moistureHighAlertApiUrl, strconv.Itoa(int(presentMoistureLevel)))
+		url := fmt.Sprintf("%s?level=%s", u.moistureLowAlertApiUrl, strconv.Itoa(int(presentMoistureLevel)))
 		if err := u.voiceCallRepo.MakeAlertCall(url, u.callFrom, u.callTo); err != nil {
 			log.Println("error occurred while making the voice call, Err: ", err.Error())
 		}
