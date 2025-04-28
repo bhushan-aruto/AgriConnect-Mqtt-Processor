@@ -2,7 +2,9 @@
 # 📄 Moisture Monitoring and Alerting System 🌱
 
 ## 📌 Overview 🚀
-A simple and efficient Go program that monitors real-time soil moisture levels 📡 and automatically triggers a voice call alert 📞 using Twilio when moisture levels fall outside the safe range! Perfect for smart farming, IoT gardens, and remote moisture tracking 🌾.
+A simple and efficient Go program that monitors real-time soil moisture levels 📡 and automatically triggers
+a voice call alert 📞 using Twilio when moisture levels fall outside the safe range! Perfect for smart farming,
+IoT gardens, and remote moisture tracking 🌾.
 
 ## ✨ Features 🎉
 - ✅ **Continuously monitors soil moisture via MQTT** 📡
